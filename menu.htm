@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cocina</title>
+<style type="text/css">
+</style>
+<link href="estilococina.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+#Sugerencia {
+	position: absolute;
+	width: 150px;
+	height: 52px;
+	z-index: 1;
+	left: 56px;
+	font-size: 90%;
+	background-color: #FFF;
+	padding: 5px;
+	border: 1px solid #666;
+	visibility: hidden;
+}
+</style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+</head>
+
+<body style="text-align: center" onLoad="MM_preloadImages('imagenes/email2.gif')">
+<p>
+<img src="imagenes/logotipo.gif" alt="Cocina" width="200" height="177" usemap="#Map">
+<map name="Map">
+  <area shape="poly" coords="59,82" href="#">
+  <area shape="poly" coords="71,82,89,75,102,85,96,96,98,110,105,127,108,140,95,147,72,154,60,163,55,157,50,138,43,122,39,116,31,118,25,108,28,99,39,93,50,93,55,85,64,83" href="platosemana.htm" target="mainFrame" alt="Plato de la semana">
+  <area shape="poly" coords="133,76,148,79,159,83,170,91,184,96,189,108,177,114,170,124,166,136,162,145,158,155,148,152,137,148,125,144,116,140,110,139,111,128,114,119,121,101,123,96,116,90,116,83,120,76" href="postresemana.htm" target="mainFrame" alt="Postre de la semana">
+</map>
+</p>
+<p>
+  <embed src="media/audio.mid" width="0" height="0" loop="true"></embed>
+</p>
+<ul class="menu">
+  <li><a href="quienes.htm" target="mainFrame">Quiénes somos</a></li>
+  <li><a href="platosemana.htm" target="mainFrame">Plato Semana</a></li>
+  <li><a href="postresemana.htm" target="mainFrame">Postre Semana</a></li>
+  <li><a href="tureceta.htm" target="mainFrame">Tu Receta</a></li>
+</ul>
+<p><a href="mailto:cocineros@aulaclic.es." onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Correo','','imagenes/email2.gif',1)"><img src="imagenes/email1.gif" alt="e-mail" width="94" height="31" id="Correo" onMouseOver="MM_showHideLayers('Sugerencia','','show')" onMouseOut="MM_showHideLayers('Sugerencia','','hide')"></a></p>
+<div id="Sugerencia">No olvides mandarnos tus dudas y sugerencias</div>
+<span class="menu li a"></span>
+</body>
+</html>
